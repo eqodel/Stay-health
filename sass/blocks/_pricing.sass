@@ -1,0 +1,83 @@
+.pricing
+    color: #fff
+    padding-top: 100px
+    padding-bottom: 200px
+    position: relative
+    &-wrapper   
+        display: flex
+        justify-content: space-between
+        margin-top: 30px
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 350px
+        height: 682px
+        color: #000
+        background-color: #fff
+        padding: 30px 50px
+        padding-top: 0
+        border-radius: 35px
+        box-shadow: 0px 16px 35px rgba(112, 144, 176, 0.2)
+        position: relative
+    &__img
+        border-radius: 10px
+        object-fit: cover
+        width: 188px
+        height: 120px
+        margin: 0 auto
+    &__title
+        font-weight: 600
+        font-size: 30px
+        line-height: 45px
+    &__subtitle
+        font-weight: 400
+        font-size: 18px
+        line-height: 30px
+        text-transform: none
+    &-list
+        text-align: left
+        list-style-type: none
+        padding: 0
+        &__item
+            margin-left: 30px
+            margin-bottom: 10px
+            &-wrapper
+                width: 200px
+                background: url(/img/mark.svg) no-repeat left center
+    &__price
+        font-weight: 600
+        font-size: 32px  
+        &-wrapper
+            margin-top: auto
+        
+    &__button
+        background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%)
+        font-weight: 500
+        font-size: 18px
+        margin-top: 30px
+    &__sub
+        font-weight: 300
+        font-size: 20px
+    &__popular
+        position: absolute
+        top: 0
+        right: 0
+
+        
+                    
+
+            
+            
+            
+            
+
+.pricing:before
+    content: ''
+    position: absolute 
+    top: 0
+    left: 0
+    height: 600px
+    width: 100%
+    background: $background
+    z-index: -1

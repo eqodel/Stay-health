@@ -1,0 +1,80 @@
+.about
+    position: relative
+    padding-bottom: 200px
+    &__title
+        width: 445px
+    &__title::before
+        content: ''
+        background-image: url(/img/quote-1.svg)
+        width: 70px
+        height: 60px
+        position: absolute
+        top: 0
+        left: 450px
+        opacity: 0.8
+    &__title::after
+        content: ''
+        background-image: url(/img/quote-2.svg)
+        width: 70px
+        height: 60px
+        position: absolute
+        top: 0
+        right: 450px
+        opacity: 0.8
+
+.numbers
+    width: 900px
+    height: 100px
+    display: flex
+    margin: 0 auto
+    margin-top: 30px
+    justify-content: space-between
+    &__item
+        display: flex
+        flex-direction: column
+        width: 275px
+    &__item:nth-child(2)
+        border-right: 1px solid grey
+        border-left: 1px solid grey 
+    &__numeric
+        font-weight: 800
+        font-size: 48px
+        line-height: 64px
+    &__subtitle
+        font-weight: 400
+        font-size: 18px
+        line-height: 32px
+
+.achievments
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 50px
+    &__item
+        width: 540px
+        display: flex
+        align-items: center
+    &__item:nth-child(2)
+        order: 1
+    &__item:nth-child(4)
+        order: 2    
+    &__img
+        width: 70px
+        height: 70px
+        margin-right: 45px
+        margin-top: 20px
+        align-self: flex-start
+    &__text
+        text-align: left
+    &__title
+        font-weight: 600
+        font-size: 28px
+        line-height: 42px
+        margin-bottom: 5px
+    &__description
+        font-weight: 300
+        font-size: 16px
+        line-height: 30px
+        color: #222
+        margin-top: 0
+
