@@ -871,38 +871,6 @@ a {
   .nutritions__title {
     font-size: 35px;
   }
-}
-
-@media (max-width: 768px) {
-  .header__button {
-    width: 100px;
-  }
-  .welcome__title {
-    font-size: 50px;
-  }
-  .swiper__title {
-    font-size: 18px;
-  }
-  .nutritions__img:first-child {
-    right: auto;
-  }
-  .nutritions__img {
-    position: static;
-    width: 350px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin-top: 10px;
-  }
-  .nutritions__label {
-    display: none;
-  }
-  .nutritions__title {
-    width: auto;
-    font-size: 35px;
-  }
-  .nutritions__description {
-    width: auto;
-  }
   .pricing {
     background: #161D2F;
   }
@@ -939,6 +907,56 @@ a {
   .pricing__price-wrapper {
     margin-top: 0;
   }
+  .nutritions__img:first-child {
+    right: auto;
+  }
+  .nutritions__img {
+    position: static;
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 10px;
+  }
+  .nutritions__label {
+    display: none;
+  }
+  .nutritions__title {
+    width: auto;
+    font-size: 35px;
+  }
+  .nutritions__description {
+    width: auto;
+  }
+  .form-right-side {
+    display: none;
+  }
+  .numbers {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__button {
+    width: 100px;
+    display: none;
+  }
+  .header-wrapper--mobile {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background: #161D2F;
+  }
+  .welcome__title {
+    font-size: 50px;
+  }
+  .welcome__description {
+    width: auto;
+  }
+  .swiper__title {
+    font-size: 18px;
+  }
   .about {
     padding-top: 100px;
   }
@@ -950,9 +968,6 @@ a {
   }
   .numbers {
     width: 100%;
-  }
-  .form-right-side {
-    display: none;
   }
   .footer__description {
     width: 260px;
@@ -987,17 +1002,6 @@ a {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  .header-wrapper--mobile {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99;
-    background: #161D2F;
-  }
-  .header__button {
-    display: none;
-  }
   .menu__button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1019,8 +1023,14 @@ a {
             flex-direction: column;
     margin-top: 15px;
   }
-  .welcome__description {
-    width: auto;
+}
+
+@media (max-width: 630px) {
+  .pricing {
+    display: none;
+  }
+  .nutritions {
+    display: none;
   }
 }
 
@@ -1029,9 +1039,6 @@ a {
     font-size: 20px;
     line-height: 50px;
   }
-  .welcome__description {
-    width: auto;
-  }
   .welcome__video {
     height: auto;
   }
@@ -1039,12 +1046,6 @@ a {
     width: 300px;
     font-size: 30px;
     line-height: 40px;
-  }
-  .pricing {
-    display: none;
-  }
-  .nutritions {
-    display: none;
   }
   .numbers__numeric {
     font-size: 20px;
@@ -1072,6 +1073,7 @@ a {
   }
   .form__input {
     width: 100%;
+    margin-right: 0;
   }
   .programms {
     padding-bottom: 50px;

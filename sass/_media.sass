@@ -77,36 +77,6 @@
     .form
         &__img
 
-
-@media (max-width: 768px)
-    .header
-        &__button
-            width: 100px
-
-    .welcome
-        &__title
-            font-size: 50px
-
-    .swiper
-        &__title
-            font-size: 18px
-
-    .nutritions
-        &__img:first-child
-            right: auto
-        &__img
-            position: static
-            width: 350px
-            object-fit: cover
-            margin-top: 10px
-        &__label
-            display: none
-        &__title
-            width: auto
-            font-size: 35px
-        &__description
-            width: auto
-
     .pricing
         background: $background
         &-wrapper
@@ -128,6 +98,54 @@
             &-wrapper
                 margin-top: 0
 
+
+    .nutritions
+        &__img:first-child
+            right: auto
+        &__img
+            position: static
+            width: 350px
+            object-fit: cover
+            margin-top: 10px
+        &__label
+            display: none
+        &__title
+            width: auto
+            font-size: 35px
+        &__description
+            width: auto
+
+    .form-right-side
+        display: none
+
+    .numbers
+        width: auto 
+
+
+@media (max-width: 768px)
+    .header
+        &__button
+            width: 100px
+            display: none
+        &-wrapper
+            &--mobile
+                position: fixed
+                left: 0
+                right: 0
+                top: 0
+                z-index: 99
+                background: $background
+
+    .welcome
+        &__title
+            font-size: 50px
+        &__description
+            width: auto
+
+    .swiper
+        &__title
+            font-size: 18px
+
     .about
         padding-top: 100px
         &__title::before
@@ -138,13 +156,9 @@
     .numbers
         width: 100%
     
-    .form-right-side
-        display: none
-    
     .footer
         &__description
             width: 260px
-
 
     .nav
         display: none
@@ -164,21 +178,6 @@
         &__item
             font-size: 20px
             margin-bottom: 20px
-            
-
-
-
-    .header
-        &-wrapper
-            &--mobile
-                position: fixed
-                left: 0
-                right: 0
-                top: 0
-                z-index: 99
-                background: $background
-        &__button
-            display: none
 
 
     .menu
@@ -196,18 +195,19 @@
             flex-direction: column
             margin-top: 15px
 
-    .welcome
-        &__description
-            width: auto
+
+@media (max-width: 630px)
+    .pricing
+            display: none 
+
+    .nutritions
+        display: none
 
 @media (min-width: 320px) and (max-width: 480px)
-
     .welcome
         &__title
             font-size: 20px
             line-height: 50px
-        &__description
-            width: auto
         &__video
             height: auto
 
@@ -216,12 +216,6 @@
         width: 300px
         font-size: 30px
         line-height: 40px
-
-    .pricing
-        display: none
-
-    .nutritions
-        display: none
     
     .numbers
         &__numeric
@@ -245,6 +239,7 @@
             text-align: center
         &__input
             width: 100%
+            margin-right: 0
                 
 
     .programms
