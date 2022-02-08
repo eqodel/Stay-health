@@ -1,0 +1,39 @@
+.modal
+    &__overlay
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background-color: $background
+        z-index: 100
+        visibility: hidden
+        opacity: 0
+        &--visible
+            visibility: visible
+            opacity: 0.7
+    &__dialog
+        position: fixed
+        top: 50%
+        left: 50%
+        color: #fff
+        padding: 30px 30px
+        border-radius: 10px
+        background: $background
+        z-index: 101
+        max-width: 550px
+        transform: translate(-50%, -50%)
+        visibility: hidden
+        opacity: 0
+        &--visible
+            visibility: visible
+            opacity: 1
+    &__close
+        color: #fff
+        position: absolute
+        right: 15px
+        top: 15px
+    &__title
+        font-size: 25px
+        width: 320px
+        margin: 0
