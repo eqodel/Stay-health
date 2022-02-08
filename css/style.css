@@ -1078,6 +1078,12 @@ a {
             flex-direction: column;
     margin-top: 15px;
   }
+  .modal__dialog {
+    height: 300px;
+  }
+  .modal__title {
+    width: 320px;
+  }
 }
 
 @media (max-width: 630px) {
@@ -1086,6 +1092,16 @@ a {
   }
   .nutritions {
     display: none;
+  }
+  .modal__form {
+    width: auto;
+    height: auto;
+  }
+  .modal__input-wrapper {
+    margin-top: 0;
+  }
+  .modal__button {
+    margin-top: 10px;
   }
 }
 
@@ -1138,6 +1154,13 @@ a {
   }
   .swiper__img {
     width: 100%;
+  }
+  .modal__dialog {
+    padding: 50px 0px;
+    height: auto;
+  }
+  .modal__title {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

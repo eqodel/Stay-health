@@ -196,12 +196,28 @@
             margin-top: 15px
 
 
+    .modal
+        &__dialog
+            height: 300px
+        &__title
+            width: 320px
+
+
 @media (max-width: 630px)
     .pricing
             display: none 
 
     .nutritions
         display: none
+
+    .modal
+        &__form
+            width: auto
+            height: auto
+        &__input-wrapper
+            margin-top: 0
+        &__button
+            margin-top: 10px
 
 @media (min-width: 320px) and (max-width: 480px)
     .welcome
@@ -251,4 +267,11 @@
     .swiper
         &__img
             width: 100%
+
+    .modal
+        &__dialog
+            padding: 50px 0px
+            height: auto
+        &__title
+            font-size: 20px
         
